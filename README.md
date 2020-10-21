@@ -1,6 +1,6 @@
 # Note-Taker
 # Chad Tarpey
-![Project Image](./assets/images/weather.png)
+![Project Image](Develop/express.png)
 
 ---
 
@@ -47,7 +47,7 @@ Application should allow users to delete previously saved notes.
 
 ---
 ## How To Use
-- Visit   https://chadtarpey615.github.io/Weather-Dashboard/
+- Visit   https://chadtarpey615.github.io/Express/
 - Google Chrome or any Web Browser
 ---
 ## References
