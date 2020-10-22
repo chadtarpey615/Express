@@ -34,3 +34,9 @@
     "text": "bye"
   }
 ]
+
+router.get("/notes" async, function (req, res) {
+
+  let data = await readAsync("./db/db.json", "UTF-8");
+  res.json(JSON.parse(data));
+});

@@ -5,9 +5,6 @@ let notes;
 
 // get notes from db.json
 
-router.get("/notes", function (req, res) {
-    res.json(notes);
-});
 
 // assign id to the new notes
 
