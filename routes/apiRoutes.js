@@ -16,7 +16,7 @@ function assignId() {
     console.log(notes.length);
 };
 
-let savedNotes = fs.readFileSync("../db/db.json", "UTF-8");
+let savedNotes = fs.readFileSync("./db/db.json", "UTF-8");
 if (savedNotes) {
     let oldNotes = JSON.parse(savedNotes);
     notes = oldNotes
@@ -39,7 +39,7 @@ router.post("/notes", (req, res) => {
     };
     // push notes to db.json
     notes.push(newPost)
-    fs.writeFile("../db/db.json", JSON.stringify(notes, null, 2), function (err, data) {
+    fs.writeFile("./db/db.json", JSON.stringify(notes, null, 2), function (err, data) {
         if (err) {
             throw err
         } else {
