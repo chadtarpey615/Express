@@ -2,10 +2,6 @@ const router = require("express").Router();
 const fs = require("fs");
 let notes;
 
-
-// get notes from db.json
-
-
 // assign id to the new notes
 
 function assignId() {
@@ -16,13 +12,24 @@ function assignId() {
     console.log(notes.length);
 };
 
-let savedNotes = fs.readFileSync("./db/db.json", "UTF-8");
+
+
+let savedNotes = fs.readFileSync("db/db.json", "UTF-8");
 if (savedNotes) {
     let oldNotes = JSON.parse(savedNotes);
     notes = oldNotes
 } else {
     notes = [];
 };
+
+
+
+router.get("/notes", function (req, res) {
+
+    res.json(notes);
+});
+
+
 // post new notes
 
 router.post("/notes", (req, res) => {
@@ -39,7 +46,7 @@ router.post("/notes", (req, res) => {
     };
     // push notes to db.json
     notes.push(newPost)
-    fs.writeFile("./db/db.json", JSON.stringify(notes, null, 2), function (err, data) {
+    fs.writeFile("db/db.json", JSON.stringify(notes, null, 2), function (err, data) {
         if (err) {
             throw err
         } else {

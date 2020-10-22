@@ -1,6 +1,6 @@
 # Note-Taker
 # Chad Tarpey
-![Project Image](Develop/express.png)
+![Project Image](express.png)
 
 ---
 

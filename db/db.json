@@ -1,37 +1,46 @@
 [
   {
-    "title": "hi",
-    "text": "hello",
-    "id": 0
-  },
-  {
     "title": "supplies",
     "text": "Stop by the store to get some cleaning supplies",
-    "id": 1
+    "id": 0
   },
   {
     "title": "Things to do ",
     "text": "Clean bathrooms\nClean bedrooms\nClean the kitchen\nWash clothes \nCut the grass and pick up all the sticks \nGet party supplies for my sons birthday party\n",
-    "id": 2
+    "id": 1
   },
   {
     "title": "Testing ",
     "text": "123",
-    "id": 3
+    "id": 2
   },
   {
     "title": "Things for class",
     "text": "A up to date laptop\nGood internet connection\n Time management \nAnd a desire to learn ",
-    "id": 4
+    "id": 3
   },
   {
     "title": "test test ",
     "text": "test test test",
-    "id": 5
+    "id": 4
   },
   {
     "title": "bye",
-    "text": "bye"
+    "text": "bye",
+    "id": 5
+  },
+  {
+    "title": "hello",
+    "text": "hi",
+    "id": 6
+  },
+  {
+    "title": "tyhjh",
+    "text": "rthh",
+    "id": 7
+  },
+  {
+    "title": "hello ",
+    "text": "test123"
   }
 ]
-
